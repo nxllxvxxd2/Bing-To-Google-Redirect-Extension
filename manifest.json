@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Bing → Google Redirect",
+  "version": "1.0",
+  "description": "Redirects Bing searches to Google automatically.",
+  "permissions": ["tabs", "webNavigation"],
+  "background": {
+    "service_worker": "redirect.js"
+  },
+  "host_permissions": [
+    "https://www.bing.com/*"
+  ]
+}
