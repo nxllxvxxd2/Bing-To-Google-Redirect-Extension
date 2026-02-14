@@ -7,7 +7,9 @@ chrome.webNavigation.onCommitted.addListener((details) => {
     const q = url.searchParams.get("q");
     if (!q) return;
 
-    const googleURL = "https://www.google.com/search?q=" + encodeURIComponent(q);
+ const modifiedQuery = q + " -ai";
+
+    const googleURL = "https://www.google.com/search?q=" + encodeURIComponent(modifiedQuery);
 
     chrome.tabs.update(details.tabId, { url: googleURL });
 });
