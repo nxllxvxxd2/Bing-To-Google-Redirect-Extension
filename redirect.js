@@ -1,5 +1,5 @@
 chrome.webNavigation.onCommitted.addListener((details) => {
-    if (details.frameId !== 0) return; // Only main frame
+    if (details.frameId !== 0) return;
 
     const url = new URL(details.url);
     if (url.hostname !== "www.bing.com" || url.pathname !== "/search") return;

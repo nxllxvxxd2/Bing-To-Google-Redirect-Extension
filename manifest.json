@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Bing → Google Redirect",
-  "version": "1.0",
-  "description": "Redirects Bing searches to Google automatically.",
+  "version": "1.5",
+  "description": "Redirects Bing searches to Google automatically adding -ai in order to remove the AI overview.",
   "permissions": ["tabs", "webNavigation"],
   "background": {
     "service_worker": "redirect.js"
